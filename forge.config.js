@@ -19,4 +19,17 @@ module.exports = {
       config: {},
     },
   ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'jrbarto',
+          name: 'electron-tutorial'
+        },
+        prerelease: false,
+        draft: true
+      }
+    }
+  ]
 };

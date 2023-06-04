@@ -1,6 +1,8 @@
 const { app, BrowserWindow, ipcMain } = require('electron')
 const path = require('path')
 
+require('update-electron-app')()
+
 const createWindow = () => {
     const window = new BrowserWindow({
         width: 800,
